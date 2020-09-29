@@ -1,7 +1,7 @@
 # role
 
 resource "aws_iam_role" "default" {
-  name = "${var.name}-cluster-fargate"
+  name = "${var.name}-${var.cluster_name}-fargate"
 
   assume_role_policy = <<POLICY
 {
